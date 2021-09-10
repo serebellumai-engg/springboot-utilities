@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="SA.jO3ZHs6y9PC7Y_LaXvkx9u8P" cacheDuration="PT1440M" entityID="pretty2021">
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
+        <md:ArtifactResolutionService index="0" Location="https://indihwin1601.informatica.com:9031/idp/ARS.ssaml2" Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" isDefault="true" />
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://indihwin1601.informatica.com:9031/idp/SLO.saml2" />
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://indihwin1601.informatica.com:9031/idp/SLO.saml2" />
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://indihwin1601.informatica.com:9031/idp/SLO.saml2" />
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://indihwin1601.informatica.com:9031/idp/SLO.ssaml2" />
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://indihwin1601.informatica.com:9031/idp/SSO.saml2" />
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://indihwin1601.informatica.com:9031/idp/SSO.saml2" />
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://indihwin1601.informatica.com:9031/idp/SSO.saml2" />
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://indihwin1601.informatica.com:9031/idp/SSO.saml2" />
+    </md:IDPSSODescriptor>
+    <md:AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:AttributeService Location="https://indihwin1601.informatica.com:9031/idp/attrsvc.ssaml2" Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" />
+    </md:AttributeAuthorityDescriptor>
+    <md:ContactPerson contactType="administrative" />
+</md:EntityDescriptor>
