@@ -1,0 +1,26 @@
+version: "3"
+services:
+
+  myapp-mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=root@123
+      - MYSQL_DATABASE=classicmodels
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root@123
+    ports:
+      - 3306:3306
+
+  myapp-main:
+    image: dataloader-app
+    restart: on-failure
+    depends_on:
+      - myapp-mysql
+    ports:
+      - 8000:8000
+    environment:
+      - DATABASE_HOST=myapp-mysql
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=root@123
+      - DATABASE_NAME=classicmodels
+      - DATABASE_PORT=3306
